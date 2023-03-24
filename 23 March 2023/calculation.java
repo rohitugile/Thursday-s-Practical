@@ -8,11 +8,11 @@ public class calculation {
 
     calculation()
     {
-        Scanner sc= new Scanner(System.in);
-        System.out.println("Enter two numbers");
+        Scanner sc= new Scanner(System.in);     // creating object of Scanner 
+        System.out.println("Enter two numbers");     // asking user to give input
     a= sc.nextInt();
     b= sc.nextInt();
-    sc.close();
+    sc.close();                                 //closing sc
     }
 
     void addition()
@@ -45,11 +45,11 @@ public class calculation {
 class cal {
     public static void main(String[] args) {
 
-        calculation C = new calculation();
+        calculation C = new calculation();  //creating object C for calculation
         
-        C.addition();
-        C.substraction();
-        C.multiplication();
-        C.division();
+        C.addition();       // addition method call
+        C.substraction();   // substraction method call 
+        C.multiplication(); // multipication method call
+        C.division();       // division method call
     }
 }
