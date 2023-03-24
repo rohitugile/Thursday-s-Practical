@@ -1,5 +1,5 @@
 public class calculation {
-    int a,b,temp ;
+    int a,b,c;
 
     void init(){
     a=20;
@@ -7,25 +7,25 @@ public class calculation {
     }
     void addition()
     {
-        temp = a+b;
+        c = a+b;
         System.out.println("The Addition is:" + temp );
     }
 
     void substraction()
     {
-        temp = a-b;
+        c = a-b;
         System.out.println("The Substraction is:" + temp);
     }
 
     void multiplication()
     {
-        temp = a*b;
+        c = a*b;
         System.out.println("The multiplication is :" + temp);
     }
 
     void division()
     {
-        temp = a/b;
+        c = a/b;
         System.out.println("The Division is :" + temp);
     }    
 }
@@ -35,7 +35,7 @@ public class calculation {
 class cal {
     public static void main(String[] args) {
         
-        calculation C = new calculation();
+        calculation C = new calculation();  //creating object of calculation class
         C.init();
         C.addition();
         C.substraction();
