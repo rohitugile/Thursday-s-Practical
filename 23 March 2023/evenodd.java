@@ -7,12 +7,13 @@ class evenodd {
     int a;
     Scanner sc = new Scanner(System.in);
 
-    System.out.println("Enter the number :")
-    a = nextInt();
+    System.out.println("Enter the number :");   // asking for input
+    a = sc.nextInt();
 
     if(a%2==0)
     System.out.println("The number is even");
     else
     System.out.println("The number is Odd");
+    sc.close();
  }   
 }
