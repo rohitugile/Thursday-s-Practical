@@ -1,32 +1,42 @@
-public class calculation {
-    int a,b,c;
+//WAP to Create a class Calculation add methods addition,substraction,multiplication,division in it. Create objects and access those methods.
 
-    void init(){
-    a=20;
-    b=10;
+
+import java.util.Scanner;
+
+public class calculation {
+    int a,b,result ;
+
+    calculation()
+    {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter two numbers");
+    a= sc.nextInt();
+    b= sc.nextInt();
+    sc.close();
     }
+
     void addition()
     {
-        c = a+b;
-        System.out.println("The Addition is:" + temp );
+        result = a+b;
+        System.out.println("The Addition is:" + result);
     }
 
     void substraction()
     {
-        c = a-b;
-        System.out.println("The Substraction is:" + temp);
+        result = a-b;
+        System.out.println("The Substraction is:" + result);
     }
 
     void multiplication()
     {
-        c = a*b;
-        System.out.println("The multiplication is :" + temp);
+        result = a*b;
+        System.out.println("The multiplication is :" + result);
     }
 
     void division()
     {
-        c = a/b;
-        System.out.println("The Division is :" + temp);
+        result = a/b;
+        System.out.println("The Division is :" + result);
     }    
 }
 
@@ -34,9 +44,9 @@ public class calculation {
 
 class cal {
     public static void main(String[] args) {
+
+        calculation C = new calculation();
         
-        calculation C = new calculation();  //creating object of calculation class
-        C.init();
         C.addition();
         C.substraction();
         C.multiplication();
